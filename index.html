@@ -9,53 +9,65 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: url('https://wallpapercave.com/wp/wp2555130.jpg') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1581092334534-6c947af733af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
-    }
-    header {
-      background: rgba(0,0,0,0.8);
-      padding: 20px;
       text-align: center;
     }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+    }
+
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2em;
     }
+
     nav {
       margin-top: 10px;
     }
+
     nav a {
-      margin: 0 15px;
+      color: #fff;
       text-decoration: none;
-      color: #00ffcc;
+      margin: 0 15px;
       font-weight: bold;
     }
+
     section {
-      padding: 40px 20px;
-      background: rgba(0,0,0,0.7);
-      margin: 20px;
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 20px auto;
+      max-width: 900px;
       border-radius: 10px;
     }
+
     h2 {
-      text-align: center;
-      color: #00ffcc;
+      margin-bottom: 20px;
     }
+
     footer {
-      background: rgba(0,0,0,0.8);
-      text-align: center;
-      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
       font-size: 0.9em;
     }
+
     /* Botón de WhatsApp */
     .whatsapp-btn {
-      display:inline-block;
-      padding:10px 16px;
-      border-radius:8px;
-      background:#25D366;
-      color:#fff;
-      text-decoration:none;
-      font-weight:bold;
+      display: inline-block;
+      padding: 12px 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
     }
   </style>
 </head>
@@ -72,36 +84,26 @@
 
   <section id="inicio">
     <h2>Bienvenido a NexuWall</h2>
-    <p style="text-align:center;">Ofrecemos soluciones avanzadas de ciberseguridad para empresas y organizaciones.</p>
+    <p>Ofrecemos soluciones avanzadas de ciberseguridad para empresas y organizaciones.</p>
   </section>
 
   <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <ul>
-      <li>🔒 Seguridad en la red</li>
-      <li>🛡️ Monitoreo y prevención de ataques</li>
-      <li>💻 Auditorías de seguridad</li>
-      <li>📊 Consultoría en protección de datos</li>
-    </ul>
+    <h2>Servicios</h2>
+    <p>- Auditorías de seguridad</p>
+    <p>- Monitoreo 24/7</p>
+    <p>- Respuesta a incidentes</p>
+    <p>- Protección de datos</p>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p style="text-align:center;">Correo: <a href="mailto:nexuwall@gmail.com" style="color:#00ffcc;">nexuwall@gmail.com</a></p>
-    <p style="text-align:center;">Teléfono: 
-      <a href="https://wa.me/56931902568?text=Hola%20NexuWall,%20quiero%20más%20información%20sobre%20sus%20servicios."
-         target="_blank" rel="noopener" style="color:#00ffcc;">
-        +569 3190 2568
-      </a>
-    </p>
-    <p style="text-align:center;">Dirección: Santiago, Chile</p>
+    <p>Email: <a href="mailto:nexuwall@gmail.com">nexuwall@gmail.com</a></p>
+    <p>Teléfono: <a href="tel:+56931902568">+56 9 3190 2568</a></p>
 
-    <p style="text-align:center; margin-top:10px;">
-      <a href="https://wa.me/56931902568?text=Hola%20NexuWall,%20quiero%20más%20información."
-         target="_blank" rel="noopener" class="whatsapp-btn">
-        💬 Chatear por WhatsApp
-      </a>
-    </p>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/56931902568?text=Hola%20NexuWall,%20quiero%20más%20información." target="_blank" class="whatsapp-btn">
+      📲 Escríbenos por WhatsApp
+    </a>
   </section>
 
   <footer>
