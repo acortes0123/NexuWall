@@ -1,138 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecureTech | Ciberseguridad Profesional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.4;
-            background-color: #0e0e0e;
-            color: #f1f1f1;
-        }
-        header {
-            background-color: #1b1b1b;
-            padding: 15px;
-            text-align: center;
-        }
-        header h1 {
-            color: #00ffcc;
-            font-size: 1.8em;
-            margin-bottom: 5px;
-        }
-        nav {
-            margin-top: 5px;
-        }
-        nav a {
-            color: #f1f1f1;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #00ffcc;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .hero {
-            text-align: center;
-            padding: 45px 20px;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1591696205602-6c73a0d3bb01?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
-        }
-        .hero h2 {
-            color: #00ffcc;
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-        .hero p {
-            font-size: 1.1em;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .service {
-            background-color: #1b1b1b;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 8px;
-            flex: 1 1 250px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .service:hover {
-            transform: translateY(-5px);
-        }
-        .service h3 {
-            color: #00ffcc;
-            margin-bottom: 10px;
-        }
-        footer {
-            background-color: #1b1b1b;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-            color: #888;
-        }
-        @media(max-width: 768px){
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexuWall - Ciberseguridad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://wallpapercave.com/wp/wp2555130.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header {
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.7);
+      margin: 20px;
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #00ffcc;
+    }
+    footer {
+      background: rgba(0,0,0,0.8);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+    /* Botón de WhatsApp */
+    .whatsapp-btn {
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:8px;
+      background:#25D366;
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>NexuWall</h1>
+    <p>Protegiendo tu mundo digital</p>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-    <header>
-        <h1>NexuWall</h1>
-        <nav>
-            <a href="#hero">Inicio</a>
-            <a href="#services">Servicios</a>
-            <a href="#contact">Contacto</a>
-        </nav>
-    </header>
+  <section id="inicio">
+    <h2>Bienvenido a NexuWall</h2>
+    <p style="text-align:center;">Ofrecemos soluciones avanzadas de ciberseguridad para empresas y organizaciones.</p>
+  </section>
 
-    <section class="hero" id="hero">
-        <h2>Protegiendo tu mundo digital</h2>
-        <p>Ofrecemos soluciones avanzadas de ciberseguridad para empresas y organizaciones.</p>
-    </section>
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <ul>
+      <li>🔒 Seguridad en la red</li>
+      <li>🛡️ Monitoreo y prevención de ataques</li>
+      <li>💻 Auditorías de seguridad</li>
+      <li>📊 Consultoría en protección de datos</li>
+    </ul>
+  </section>
 
-    <section class="services" id="services">
-        <div class="service">
-            <h3>Auditorías de Seguridad</h3>
-            <p>Revisamos tu infraestructura digital para identificar vulnerabilidades y fortalecer tu defensa.</p>
-        </div>
-        <div class="service">
-            <h3>Protección de Datos</h3>
-            <p>Implementamos políticas y sistemas para asegurar la confidencialidad y la integridad de tu información.</p>
-        </div>
-        <div class="service">
-            <h3>Respuesta a Incidentes</h3>
-            <p>Contamos con un equipo especializado para detectar, contener y resolver amenazas rápidamente.</p>
-        </div>
-    </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align:center;">Correo: <a href="mailto:nexuwall@gmail.com" style="color:#00ffcc;">nexuwall@gmail.com</a></p>
+    <p style="text-align:center;">Teléfono: 
+      <a href="https://wa.me/56931902568?text=Hola%20NexuWall,%20quiero%20más%20información%20sobre%20sus%20servicios."
+         target="_blank" rel="noopener" style="color:#00ffcc;">
+        +569 3190 2568
+      </a>
+    </p>
+    <p style="text-align:center;">Dirección: Santiago, Chile</p>
 
-    <section id="contact">
-        <h2 style="text-align:center; margin-bottom: 10px;">Contacto</h2>
-        <p style="text-align:center;">Correo: nexuwall@gmail.com | Teléfono: +569 3190 2568</p>
-        <p style="text-align:center;">Dirección: Santiago, Chile</p>
-    </section>
+    <p style="text-align:center; margin-top:10px;">
+      <a href="https://wa.me/56931902568?text=Hola%20NexuWall,%20quiero%20más%20información."
+         target="_blank" rel="noopener" class="whatsapp-btn">
+        💬 Chatear por WhatsApp
+      </a>
+    </p>
+  </section>
 
-    <footer>
-        &copy; 2025 SecureTech. Todos los derechos reservados.
-    </footer>
-
+  <footer>
+    <p>© 2025 NexuWall. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
